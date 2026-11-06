@@ -578,6 +578,26 @@
     "environmentVariables": []
   },
   {
+    "id": "popnow-mcp",
+    "name": "PopNow",
+    "description": "Create images, videos, music and speech with top AI models, priced before every run",
+    "url": "https://api.popnow.ai/api/v1/mcp",
+    "link": "https://github.com/popnow-ai/popnow-api-mcp",
+    "installation_notes": "This is a remote extension that requires a PopNow API key from https://popnow.ai/api/console/keys as a Request Header e.g Authorization: Bearer <YOUR_POPNOW_API_KEY>. Paid tools quote a USD price first and spend your PopNow API balance only after you approve.",
+    "is_builtin": false,
+    "endorsed": false,
+    "environmentVariables": [],
+    "headers": [
+      {
+        "name": "Authorization",
+        "description": "Bearer <YOUR_POPNOW_API_KEY>",
+        "required": true
+      }
+    ],
+    "show_install_command": false,
+    "type": "streamable-http"
+  },
+  {
     "id": "prompts-chat-mcp",
     "name": "prompts.chat",
     "description": "Access thousands of AI prompts directly in your AI assistant",
